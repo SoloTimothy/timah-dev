@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TI-MAH — Portfolio di Timothy Adamo. Indie Game Developer, Pixel Artist e Digital Creator.">
+  <title>TI-MAH — Timothy Adamo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════ NAV ════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner container">
+      <img src="img/Logo_Vettoriale.svg" alt="TI-MAH Studio" height="40">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
+  <header id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-ash" aria-hidden="true"></div>
+    <canvas class="hero-embers" aria-hidden="true"></canvas>
+    <div class="hero-forge" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">↑ PORTFOLIO &nbsp;·&nbsp; INDIE GAME DEVELOPER ↑</p>
+
+      <!-- ─── Logo (free-floating, no frame) ─── -->
+      <div class="hero-logo-wrap">
+        <img src="img/Logo_Vettoriale.svg" alt="TI-MAH Studio" height="180" class="hero-logo">
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">GIOCHI</span>
+        </div>
+        <span class="hero-stat-sep">◆</span>
+        <div class="hero-stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">ANNI EXP</span>
+        </div>
+        <span class="hero-stat-sep">◆</span>
+        <div class="hero-stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">CREATIVITÀ</span>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="hero-cta">
+        <a href="#games" class="btn btn-primary">ESPLORA I GIOCHI</a>
+        <a href="#contact" class="btn btn-outline">CONTATTAMI</a>
+      </div>
+    </div>
+
+    <!-- Forest silhouette -->
+    <div class="hero-trees" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <polygon points="0,180 55,90 110,180" fill="#0A0500"/>
+        <polygon points="45,180 110,55 175,180" fill="#070300"/>
+        <polygon points="100,180 175,85 250,180" fill="#0A0500"/>
+        <polygon points="170,180 255,45 340,180" fill="#070300"/>
+        <polygon points="260,180 345,75 430,180" fill="#0A0500"/>
+        <polygon points="360,180 445,100 530,180" fill="#070300"/>
+        <polygon points="460,180 545,60 630,180" fill="#0A0500"/>
+        <polygon points="570,180 655,85 740,180" fill="#070300"/>
+        <polygon points="670,180 755,50 840,180" fill="#0A0500"/>
+        <polygon points="770,180 855,80 940,180" fill="#070300"/>
+        <polygon points="870,180 955,65 1040,180" fill="#0A0500"/>
+        <polygon points="970,180 1055,95 1140,180" fill="#070300"/>
+        <polygon points="1070,180 1155,55 1240,180" fill="#0A0500"/>
+        <polygon points="1170,180 1255,80 1340,180" fill="#070300"/>
+        <polygon points="1280,180 1360,100 1440,180" fill="#0A0500"/>
+        <rect x="0" y="168" width="1440" height="12" fill="#060300"/>
+      </svg>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════ ABOUT ════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">// ABOUT ME</span>
+        <h2 class="section-title">Chi sono</h2>
+        <div class="section-ornament">
+          <svg viewBox="0 0 260 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="9" x2="98" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+            <polygon points="101,2 111,9 101,16 91,9" fill="#C4A882"/>
+            <polygon points="120,3 128,9 120,15 112,9" fill="#B83A2D"/>
+            <polygon points="139,2 149,9 139,16 129,9" fill="#C4A882"/>
+            <line x1="152" y1="9" x2="260" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <h2>Timothy's Story 👾</h2><br>
+          <p>My professional journey began when I fell into front-end development while constructing an e-commerce website for a close family friend. What started as a manual task quickly became completely engrossing: I found genuine focus and enjoyment in mapping layout grids and coding responsive interfaces from absolute scratch.</p>
+          <blockquote>
+            "I started looking at games differently: instead of only asking where to find the blue collectible pendant in Resident Evil 4, I started asking how movement, systems, interfaces, and game feel actually work."
+          </blockquote><br>
+          <p>That core shift changed everything. I stopped simply consuming games and started study-building them. Today, under my visual brand marque <strong>TI-MAH</strong>, I combine interface rules, rapid game system prototyping, custom audio integration, and layout science. I am building my path between UI/UX Design, Game Development,
+              Front-End engineering, and the TI-MAH brand to create digital experiences built with pure intention.</p>
+          <div class="trait-list">
+            <div class="trait"><span class="trait-icon">⚔</span><span>Dark Fantasy Enthusiast</span></div>
+            <div class="trait"><span class="trait-icon">🗺</span><span>World Builder compulsivo</span></div>
+            <div class="trait"><span class="trait-icon">🏕</span><span>Game Jam Veteran</span></div>
+            <div class="trait"><span class="trait-icon">🎨</span><span>Pixel Artist autodidatta</span></div>
+          </div>
+        </div>
+
+        <div class="char-sheet reveal">
+          <div class="cs-header">
+            <span class="cs-class">INDIE DEVELOPER</span>
+            <span class="cs-level">LV.3</span>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-stats">
+            <div class="cs-stat">
+              <div class="cs-stat-header">
+                <span class="cs-stat-name">CREATIVITÀ</span>
+                <span class="cs-stat-val">92</span>
+              </div>
+              <div class="cs-bar"><div class="cs-fill" style="--fill:92%"></div></div>
+            </div>
+            <div class="cs-stat">
+              <div class="cs-stat-header">
+                <span class="cs-stat-name">GAME DESIGN</span>
+                <span class="cs-stat-val">88</span>
+              </div>
+              <div class="cs-bar"><div class="cs-fill" style="--fill:88%"></div></div>
+            </div>
+            <div class="cs-stat">
+              <div class="cs-stat-header">
+                <span class="cs-stat-name">STORYTELLING</span>
+                <span class="cs-stat-val">90</span>
+              </div>
+              <div class="cs-bar"><div class="cs-fill" style="--fill:90%"></div></div>
+            </div>
+            <div class="cs-stat">
+              <div class="cs-stat-header">
+                <span class="cs-stat-name">PIXEL ART</span>
+                <span class="cs-stat-val">85</span>
+              </div>
+              <div class="cs-bar"><div class="cs-fill" style="--fill:85%"></div></div>
+            </div>
+            <div class="cs-stat">
+              <div class="cs-stat-header">
+                <span class="cs-stat-name">CODING</span>
+                <span class="cs-stat-val">78</span>
+              </div>
+              <div class="cs-bar"><div class="cs-fill" style="--fill:78%"></div></div>
+            </div>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-footer">
+            <span class="cs-xp">▶ XP: 3.200 &nbsp;/&nbsp; 5.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ SKILLS ════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">// SKILLS</span>
+        <h2 class="section-title">Arsenal</h2>
+        <div class="section-ornament">
+          <svg viewBox="0 0 260 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="9" x2="98" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+            <polygon points="101,2 111,9 101,16 91,9" fill="#C4A882"/>
+            <polygon points="120,3 128,9 120,15 112,9" fill="#B83A2D"/>
+            <polygon points="139,2 149,9 139,16 129,9" fill="#C4A882"/>
+            <line x1="152" y1="9" x2="260" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Game Engines</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3>Programming</h3>
+          <div class="tags">
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/>
+            </svg>
+          </div>
+          <h3>Art &amp; Design</h3>
+          <div class="tags">
+            <span class="tag">Pixel Art</span>
+            <span class="tag">Aseprite</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">UI / UX</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>Tools &amp; Pipeline</h3>
+          <div class="tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Tiled</span>
+            <span class="tag">Audacity</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Blender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ GAMES ════════════════════════════════ -->
+  <section id="games">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">// GAMES</span>
+        <h2 class="section-title">Game Catalogue</h2>
+        <div class="section-ornament">
+          <svg viewBox="0 0 260 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="9" x2="98" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+            <polygon points="101,2 111,9 101,16 91,9" fill="#C4A882"/>
+            <polygon points="120,3 128,9 120,15 112,9" fill="#B83A2D"/>
+            <polygon points="139,2 149,9 139,16 129,9" fill="#C4A882"/>
+            <line x1="152" y1="9" x2="260" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">TUTTI</button>
+        <button class="filter-btn" data-filter="released">RELEASED</button>
+        <button class="filter-btn" data-filter="in-development">IN SVILUPPO</button>
+      </div>
+
+      <div id="games-grid" class="games-grid">
+        <div class="loading-state">LOADING CATALOGUE...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ CONTACT ════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">// CONTACT</span>
+        <h2 class="section-title">Contattami</h2>
+        <div class="section-ornament">
+          <svg viewBox="0 0 260 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="9" x2="98" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+            <polygon points="101,2 111,9 101,16 91,9" fill="#C4A882"/>
+            <polygon points="120,3 128,9 120,15 112,9" fill="#B83A2D"/>
+            <polygon points="139,2 149,9 139,16 129,9" fill="#C4A882"/>
+            <line x1="152" y1="9" x2="260" y2="9" stroke="#5E3E22" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="contact-inner">
+        <p class="contact-desc">
+          Hai un progetto in mente? Vuoi collaborare su qualcosa di selvaggio?<br>
+          Scrivimi — rispondo sempre.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:timothyadamo2211@gmail.com" class="contact-link reveal">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <div class="cl-body">
+              <span class="cl-label">EMAIL</span>
+              <span class="cl-text">timothyadamo2211@gmail.com</span>
+            </div>
+            <span class="cl-arrow">→</span>
+          </a>
+
+          <a href="https://ti-mah.itch.io/" class="contact-link reveal">
+            <span class="cl-icon cl-icon--itch">itch.io</span>
+            <div class="cl-body">
+              <span class="cl-label">ITCH.IO</span>
+              <span class="cl-text">ti-mah.itch.io</span>
+            </div>
+            <span class="cl-arrow">→</span>
+          </a>
+
+          <a href="https://github.com/SoloTimothy" class="contact-link reveal">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </span>
+            <div class="cl-body">
+              <span class="cl-label">GITHUB</span>
+              <span class="cl-text">github.com/ti-mah</span>
+            </div>
+            <span class="cl-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">TI-MAH</span>
+      <span class="footer-copy">© 2025 Timothy Adamo &nbsp;·&nbsp; Forged with passion</span>
+      <div class="footer-deco" aria-hidden="true">◆ ◇ ◆</div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Load & render games ─────────────────────────────────────────────────
+
+    let allGames = [];
+
+    async function loadGames() {
+      const grid = document.getElementById('games-grid');
+      try {
+        const res = await fetch('games.json');
+        if (!res.ok) throw new Error('fetch failed');
+        allGames = await res.json();
+        renderGames(allGames, 'all');
+        initFilters();
+      } catch {
+        grid.innerHTML = '<p class="error-state">Impossibile caricare i giochi.<br><small>Serve un server locale — prova: <code>python -m http.server</code></small></p>';
+      }
+    }
+
+    function renderGames(games, filter) {
+      const grid = document.getElementById('games-grid');
+      const list = filter === 'all' ? games : games.filter(g => g.status === filter);
+
+      if (!list.length) {
+        grid.innerHTML = '<p class="empty-state">Nessun gioco in questa categoria.</p>';
+        return;
+      }
+
+      grid.innerHTML = list.map(g => `
+        <article class="game-card${g.featured ? ' game-card--featured' : ''}" data-status="${g.status}">
+          <div class="gc-accent"></div>
+          ${g.image ? `<div class="gc-image"><img src="${g.image}" alt="${g.title}"></div>` : ''}
+          <div class="gc-top">
+            ${g.year ? `<span class="gc-year">${g.year}</span>` : ''}
+            <span class="gc-genre">${g.genre}</span>
+          </div>
+          <div class="gc-body">
+            ${g.featured ? '<span class="gc-badge">★ IN EVIDENZA</span>' : ''}
+            <h3 class="gc-title">${g.title}</h3>
+            <p class="gc-desc">${g.description}</p>
+          </div>
+          <div class="gc-footer">
+            <div class="gc-tags">${g.tags.map(t => `<span class="gc-tag">${t}</span>`).join('')}</div>
+            <div class="gc-bottom">
+              <span class="gc-status gc-status--${g.status}">
+                ${g.status === 'released' ? 'RELEASED' : 'IN SVILUPPO'}
+              </span>
+              ${g.link
+                ? `<a href="${g.link}" class="gc-link" target="_blank" rel="noopener">VEDI &rarr;</a>`
+                : `<span class="gc-link-soon">COMING SOON</span>`
+              }
+            </div>
+          </div>
+        </article>
+      `).join('');
+
+      // Stagger fade-in
+      grid.querySelectorAll('.game-card').forEach((card, i) => {
+        card.style.transitionDelay = `${i * 70}ms`;
+        requestAnimationFrame(() => card.classList.add('card-in'));
+      });
+    }
+
+    function initFilters() {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderGames(allGames, btn.dataset.filter);
+        });
+      });
+    }
+
+    // ─── Nav scroll effect ────────────────────────────────────────────────────
+
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // ─── Mobile menu ─────────────────────────────────────────────────────────
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks  = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
+
+    // ─── Scroll reveal ────────────────────────────────────────────────────────
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ─── Stat bars animate on scroll ─────────────────────────────────────────
+
+    const barObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.cs-fill').forEach(f => f.classList.add('bar-in'));
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.char-sheet').forEach(el => barObserver.observe(el));
+
+    // ─── Hero embers (rising braci) ──────────────────────────────────────────
+
+    function initEmbers() {
+      const canvas = document.querySelector('.hero-embers');
+      if (!canvas) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const ctx = canvas.getContext('2d');
+      const hero = document.getElementById('hero');
+      let w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+      let embers = [];
+      let raf = null;
+
+      // Ember palette — amber / gold / brace-red
+      const COLORS = [
+        [255, 176, 64],   // amber
+        [255, 132, 38],   // orange
+        [232, 84, 30],    // ember orange
+        [212, 64, 28],    // brace red
+        [255, 214, 130],  // gold spark
+      ];
+
+      function resize() {
+        w = hero.clientWidth;
+        h = hero.clientHeight;
+        canvas.width  = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width  = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        const count = Math.round(Math.min(120, Math.max(50, w / 11)));
+        embers = Array.from({ length: count }, () => spawn(true));
+      }
+
+      function spawn(initial) {
+        const c = COLORS[(Math.random() * COLORS.length) | 0];
+        return {
+          x: Math.random() * w,
+          y: initial ? Math.random() * h : h + Math.random() * 40,
+          r: Math.random() * 1.8 + 0.6,
+          vy: -(Math.random() * 0.55 + 0.25),
+          drift: (Math.random() - 0.5) * 0.5,
+          phase: Math.random() * Math.PI * 2,
+          sway: Math.random() * 0.9 + 0.3,
+          life: 0,
+          maxLife: Math.random() * 320 + 220,
+          color: c,
+          flick: Math.random() * 0.5 + 0.5,
+        };
+      }
+
+      function tick() {
+        ctx.clearRect(0, 0, w, h);
+        ctx.globalCompositeOperation = 'lighter';
+
+        for (let i = 0; i < embers.length; i++) {
+          const e = embers[i];
+          e.life++;
+          e.phase += 0.03;
+          e.y += e.vy;
+          e.x += e.drift + Math.sin(e.phase) * e.sway * 0.4;
+
+          // Fade in/out over lifetime; brightest in the lower third
+          const lifeRatio = e.life / e.maxLife;
+          const heightFade = Math.max(0, Math.min(1, (e.y) / h));
+          let alpha = (1 - lifeRatio) * heightFade;
+          alpha *= 0.55 + Math.abs(Math.sin(e.phase * e.flick)) * 0.45;
+
+          if (e.life >= e.maxLife || e.y < -10) {
+            embers[i] = spawn(false);
+            continue;
+          }
+
+          const [r, g, b] = e.color;
+          const glow = e.r * 3.2;
+          const grad = ctx.createRadialGradient(e.x, e.y, 0, e.x, e.y, glow);
+          grad.addColorStop(0, `rgba(${r},${g},${b},${alpha})`);
+          grad.addColorStop(0.4, `rgba(${r},${g},${b},${alpha * 0.5})`);
+          grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.arc(e.x, e.y, glow, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Hot core
+          ctx.fillStyle = `rgba(255,236,200,${alpha * 0.9})`;
+          ctx.beginPath();
+          ctx.arc(e.x, e.y, e.r * 0.5, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        ctx.globalCompositeOperation = 'source-over';
+        raf = requestAnimationFrame(tick);
+      }
+
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resize, 200);
+      }, { passive: true });
+
+      // Pause when hero scrolled out of view
+      const io = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          if (!raf) raf = requestAnimationFrame(tick);
+        } else if (raf) {
+          cancelAnimationFrame(raf);
+          raf = null;
+        }
+      }, { threshold: 0 });
+      io.observe(hero);
+
+      resize();
+      raf = requestAnimationFrame(tick);
+    }
+
+    // ─── Boot ────────────────────────────────────────────────────────────────
+    loadGames();
+    initEmbers();
+  </script>
+</body>
+</html>

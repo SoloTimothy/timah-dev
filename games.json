@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Tenant Terminal",
+    "genre": "Puzzle",
+    "year": null,
+    "description": "A retro terminal management game about power, tenants, and unstable connections.",
+    "tags": ["Retro", "Terminal", "Management", "Puzzle"],
+    "status": "released",
+    "image": "img/Tenant_Terminal.png",
+    "link": "https://ti-mah.itch.io/tenant-terminal-v01",
+    "featured": false
+  },
+  {
+    "id": 2,
+    "title": "Astrodge",
+    "genre": "Action",
+    "year": null,
+    "description": "A small arcade space game where you dodge asteroids and survive as long as possible.",
+    "tags": ["Arcade", "Space", "Dodge", "Survival"],
+    "status": "released",
+    "image": "img/Astrodge.png",
+    "link": "https://ti-mah.itch.io/astrodge",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Pulse Void",
+    "genre": "Rhythm",
+    "year": null,
+    "description": "Precision is your only lifeline in the digital vacuum.",
+    "tags": ["Rhythm", "Precision", "Minimalist"],
+    "status": "released",
+    "image": "img/Pulse_Void.png",
+    "link": "https://ti-mah.itch.io/pulsevoid",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Cat - Astrophe",
+    "genre": "Strategy",
+    "year": null,
+    "description": "It starts with a purr... and ends with the Universe. An idle game about galactic feline domination.",
+    "tags": ["Idle", "Clicker", "Strategy", "Humour"],
+    "status": "released",
+    "image": "img/Cat_Astrophe.png",
+    "link": "https://ti-mah.itch.io/cat-astrophe",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Lab Loop",
+    "genre": "Puzzle",
+    "year": null,
+    "description": "You're trapped in a time loop. The system resets every 30 seconds. Find a way to escape.",
+    "tags": ["Time Loop", "Puzzle", "Escape", "Tension"],
+    "status": "released",
+    "image": "img/Lab_Loop.png",
+    "link": "https://ti-mah.itch.io/lab-loop",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Regeneratio",
+    "genre": "Platformer",
+    "year": null,
+    "description": "A platformer game.",
+    "tags": ["Platformer", "2D"],
+    "status": "released",
+    "image": "img/Regeneratio.png",
+    "link": "https://ti-mah.itch.io/regeneratio",
+    "featured": false
+  }
+]

@@ -1,0 +1,7 @@
+name = "timah-dev"
+compatibility_date = "2026-06-13"
+
+# Sito HTML puro: nessuno step di build, nessuno script Worker.
+# I file statici vengono serviti direttamente dalla root del progetto.
+[assets]
+directory = "."
