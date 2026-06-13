@@ -378,7 +378,7 @@
       const list = filter === 'all' ? games : games.filter(g => g.status === filter);
 
       if (!list.length) {
-        grid.innerHTML = '<p class="empty-state">Nessun gioco in questa categoria.</p>';
+        grid.innerHTML = '<p class="empty-state">There are no games in this category.</p>';
         return;
       }
 
@@ -399,10 +399,10 @@
             <div class="gc-tags">${g.tags.map(t => `<span class="gc-tag">${t}</span>`).join('')}</div>
             <div class="gc-bottom">
               <span class="gc-status gc-status--${g.status}">
-                ${g.status === 'released' ? 'RELEASED' : 'IN SVILUPPO'}
+                ${g.status === 'released' ? 'RELEASED' : 'IN DEVELOPMENT'}
               </span>
               ${g.link
-                ? `<a href="${g.link}" class="gc-link" target="_blank" rel="noopener">VEDI &rarr;</a>`
+                ? `<a href="${g.link}" class="gc-link" target="_blank" rel="noopener">VIEW &rarr;</a>`
                 : `<span class="gc-link-soon">COMING SOON</span>`
               }
             </div>
