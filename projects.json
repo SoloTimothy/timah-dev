@@ -1,0 +1,27 @@
+{
+  "_instructions": "COME MODIFICARE I PROGETTI — Ogni progetto va dentro l'array 'projects'. Campi: title (titolo), description (descrizione breve), image (percorso immagine, metti i file dentro img/web/), tags (array di tecnologie/etichette), link (URL esterno del sito; metti null o '' se non disponibile). Copia/incolla un blocco { ... } per aggiungerne uno nuovo, ricordando la virgola tra un blocco e l'altro.",
+
+  "projects": [
+    {
+      "title": "Nome Progetto 1",
+      "description": "Breve descrizione del progetto: cosa hai realizzato e per chi. Sostituisci questo testo.",
+      "image": "img/web/project1.jpg",
+      "tags": ["WordPress", "Elementor", "Responsive"],
+      "link": "https://esempio.com"
+    },
+    {
+      "title": "Nome Progetto 2",
+      "description": "Breve descrizione del progetto: cosa hai realizzato e per chi. Sostituisci questo testo.",
+      "image": "img/web/project2.jpg",
+      "tags": ["E-Commerce", "WooCommerce", "SEO"],
+      "link": "https://esempio.com"
+    },
+    {
+      "title": "Nome Progetto 3",
+      "description": "Breve descrizione del progetto: cosa hai realizzato e per chi. Sostituisci questo testo.",
+      "image": "img/web/project3.jpg",
+      "tags": ["Sito Vetrina", "HTML/CSS", "JavaScript"],
+      "link": "https://esempio.com"
+    }
+  ]
+}
