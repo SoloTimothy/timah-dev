@@ -320,14 +320,38 @@
     @media (max-width: 768px) {
       .split { flex-direction: column; }
 
-      .split:hover .panel       { flex-basis: 35%; }
-      .split:hover .panel:hover { flex-basis: 65%; }
+      /* Mobile: panels are fixed & static — no hover/touch expansion */
+      .panel,
+      .split:hover .panel,
+      .split:hover .panel:hover {
+        flex-basis: 50% !important;
+        transition: none !important;
+      }
 
       .panel-title { font-size: clamp(2rem, 11vw, 3.4rem); }
 
-      /* horizontal divider */
+      /* Mobile: "TIMOTHY ADAMO" block is fully static — no animation,
+         no transition, no hover/touch shift. translateX(-50%) is kept
+         only for centering and forced with !important to override any
+         inline transform applied by JavaScript. */
+      .brand-mark,
+      .split:has(.panel--game:hover) .brand-mark,
+      .split:has(.panel--web:hover)  .brand-mark {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        transition: none !important;
+        animation: none !important;
+      }
+      .brand-name,
+      .brand-role {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+      }
+
+      /* horizontal divider (fixed, does not follow any panel) */
       .divider {
-        top: 50%; bottom: auto; left: 0; right: 0;
+        top: 50% !important; bottom: auto; left: 0 !important; right: 0;
         width: 100%; height: 2px;
         transform: translateY(-50%);
         background: linear-gradient(to right,
@@ -336,18 +360,15 @@
           rgba(212, 148, 58, .9) 50%,
           rgba(212, 148, 58, .35) 80%,
           transparent 100%);
-        transition: top var(--dur) var(--ease);
+        transition: none !important;
       }
-      .split:has(.panel--game:hover) .divider { left: 0; top: 65%; }
-      .split:has(.panel--web:hover)  .divider { left: 0; top: 35%; }
 
       .logo-badge {
         width: 124px; height: 124px;
-        transition: top var(--dur) var(--ease);
+        top: 50% !important; left: 50% !important;
+        transition: none !important;
       }
       .logo-badge img { width: 142px; }
-      .split:has(.panel--game:hover) .logo-badge { left: 50%; top: 65%; }
-      .split:has(.panel--web:hover)  .logo-badge { left: 50%; top: 35%; }
     }
 
     /* Touch devices: no hover — keep an even split, content always visible */
