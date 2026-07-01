@@ -1,4 +1,4 @@
-name = "timah-dev"
+name = "timah-dev-new"
 compatibility_date = "2026-06-13"
 
 # Sito HTML puro: nessuno step di build, nessuno script Worker.
